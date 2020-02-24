@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="1241332e-6257-4469-85e8-edc733a6a881" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="hello-worldFlow" doc:id="a01306f2-b9ad-4379-a121-94c9e6531744" >
+		<http:listener doc:name="Listener" doc:id="40d0cb1c-f806-4b0a-bd20-f46a44f8fae9" config-ref="HTTP_Listener_config" path="/hello"/>
+		<logger level="INFO" doc:name="Logger" doc:id="a918787e-a2d7-4dc9-803c-698ca5af1c9c" />
+		<set-payload value='#[output application/json --- {"message" : "Hello World From Architecture Class"}]' doc:name="Set Payload" doc:id="5c6ce2f3-d114-4add-8ae4-cd82dd62142c" />
+	</flow>
+</mule>
