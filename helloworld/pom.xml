@@ -28,7 +28,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<username>krish_saha</username>
+						<username>krish_saha_01</username>
 						<password>MuleSoft#007</password>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
