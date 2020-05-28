@@ -29,7 +29,7 @@
 				<configuration>
 					<cloudHubDeployment>
 						<username>krish_saha_01</username>
-						<password>MuleSoft#007</password>
+						<password>MuleSoft123</password>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
 						<environment>Sandbox</environment>
