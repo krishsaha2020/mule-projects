@@ -29,7 +29,7 @@
 				<configuration>
 					<cloudHubDeployment>
 						<username>krish_04</username>
-						<password>HelloWorld01</password>
+						<password>HelloWorld1</password>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
 						<environment>Sandbox</environment>
