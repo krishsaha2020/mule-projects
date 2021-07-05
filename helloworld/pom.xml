@@ -28,8 +28,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<username>krish_saha_01</username>
-						<password>MuleSoft123</password>
+						<username>krish_saha_03</username>
+						<password>HelloWorld2021</password>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
 						<environment>Sandbox</environment>
